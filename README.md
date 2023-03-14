@@ -78,8 +78,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Roizor`, `wordle-plus-plus`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Wordle++`, `Making Wordle modding easier than before.`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
