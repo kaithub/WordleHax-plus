@@ -1,2 +1,2 @@
 # 🚀 Wordle++
-Top of the line Wordle modding.  
+Amongle worlde mosdfuediendg
