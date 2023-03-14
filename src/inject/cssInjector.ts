@@ -1,3 +1,5 @@
+import logger from "../mods/logger";
+
 export default (cssJSON) => {
     document.getElementById('wpp-style') ? document.getElementById('wpp-style').remove() : 0;
     let fullCSS = cssJSON.css
@@ -6,8 +8,8 @@ export default (cssJSON) => {
     newStyle.id = 'wpp-style'
     try {
         document.body.appendChild(newStyle)
-        console.log('CSS injected successfully!')
+        new logger.Logger(logger.LogLevels.success).log('CSS injected successfully!')
     } catch(er) {
-        console.log("CSS injection failed! "+er)
+        new logger.Logger(logger.LogLevels.error).log("CSS injection failed! "+er)
     }
 }

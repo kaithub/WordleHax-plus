@@ -4,6 +4,7 @@ export default {
     css: `
     * {
         color: red;
+        background-color: blue;
     }
     button {
         transition-duration: 0.25s;

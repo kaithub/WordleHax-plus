@@ -7,10 +7,9 @@ export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
-        new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers')
+        new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers & pre-inject initialization.')
         document.getElementById('top').remove()
         trackerRemoval();
-        new logger.Logger(logger.LogLevels.init).log('Adding cool things')
         document.title = 'Wordle - Modded w/ W++'
         new logger.Logger(logger.LogLevels.init).log('Auto-inject starting')
         document.getElementById('settings-button').onclick = () => {
