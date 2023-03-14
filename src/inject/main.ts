@@ -11,7 +11,6 @@ export default {
         document.getElementById('top').remove()
         trackerRemoval();
         document.title = 'Wordle - Modded w/ W++'
-        new logger.Logger(logger.LogLevels.init).log('Auto-inject starting')
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
                 document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = "w++ & wordle settings"
@@ -34,6 +33,9 @@ export default {
         new logger.Logger(logger.LogLevels.init).log('Injecting CSS & JS')
         cssInjector(css)
         jsInjector(js, wpt)
+        // @ts-ignore-start
+        document.getElementsByClassName('Modal-module_modalOverlay__cdZDa')[0].click() 
+        // @ts-ignore-end
     }
 }
 

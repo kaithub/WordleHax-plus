@@ -7,11 +7,13 @@ enum LogLevels {
 }
 class Logger {
     level: LogLevels;
-    constructor(level: LogLevels = LogLevels.log) {
+    module: string;
+    constructor(level: LogLevels = LogLevels.log, module: string = "W++") {
         this.level = level;
+        this.module = module;
     }
     public log(message: string) {
-        console.log('[W++ '+this.level+'] '+message)
+        console.log(`[${this.module} ${this.level}] `+message)
     }
 }
 export default { Logger, LogLevels }
