@@ -13,7 +13,7 @@ class Logger {
         this.module = module;
     }
     public log(message: string) {
-        console.log(`[${this.module} ${this.level}] `+message)
+        console.log(`[${this.module} ${this.level}] ` + message)
     }
 }
 export default { Logger, LogLevels }
