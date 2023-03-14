@@ -1,17 +1,16 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require("path");
-const pkg = require('./package.json')
-
-const isProduction = true
+const pkg = require('./package.json');
 
 const stylesHandler = "style-loader";
 
 const config = {
   entry: "./dist/tsc/index.js",
+  mode: "production",
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: 'WordlePlusPlus-v'+pkg.version
+    path: path.resolve(__dirname, "dist/tsc"),
+    filename: 'built-js-'+pkg.version
   },
   plugins: [
     // Add your plugins here
@@ -39,11 +38,4 @@ const config = {
   },
 };
 
-module.exports = () => {
-  if (isProduction) {
-    config.mode = "production";
-  } else {
-    config.mode = "development";
-  }
-  return config;
-};
+module.exports = config;
