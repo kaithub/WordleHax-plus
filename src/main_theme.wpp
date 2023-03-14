@@ -17,6 +17,6 @@ module.exports = {
         g2.style = "text-align: center;"
         g2.innerText = "Welcome to W++, the extensible and moddable platform for Wordle!"
         w_bkb.appendChild(g2)
-   console.log('I AM W++ INJECTED.')
+   console.log('This is the starter theme')
     `
 }
