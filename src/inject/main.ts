@@ -1,13 +1,12 @@
 const cssInjector = require("./cssInjector");
 const jsInjector = require("./jsInjector");
 
-module.exports = {
+export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
         console.log('Initialization: Removing stupid things -ads,trackers')
-        remTracker('apstag', 'Amazon')
-        remTracker('googletag', 'Google')
+        
         document.getElementById('top').remove()
         console.log('Initialization: Adding cool things')
         document.title = 'Wordle - Modded w/ W++'
@@ -37,7 +36,3 @@ module.exports = {
     }
 }
 
-function remTracker(t, e) {
-    window[t] = null;
-    console.log('' + e + ' tracker removed')
-}
