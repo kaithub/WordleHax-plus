@@ -1,8 +1,8 @@
 import logger from "../mods/logger";
 import trackerRemoval from "../mods/trackerRemoval";
 
-const cssInjector = require("./cssInjector");
-const jsInjector = require("./jsInjector");
+const cssInjector = require("./cssInjector.ts");
+const jsInjector = require("./jsInjector.ts");
 
 export default {
     css: cssInjector,
@@ -16,7 +16,7 @@ export default {
         new logger.Logger(logger.LogLevels.init).log('Auto-inject starting')
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
-                document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerText = "w++ & wordle settings"
+                document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = "w++ & wordle settings"
                 let g = document.createElement('h1')
                 g.className = 'Modal-module_heading__u2uxI'
                 g.innerText = 'using w++ v1.0'

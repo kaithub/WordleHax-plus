@@ -1,5 +1,5 @@
 
-module.exports = (jsJSON, wpt=null) => {
+export default (jsJSON, wpt=null) => {
     document.getElementById('wpp-script') ? document.getElementById('wpp-script').remove() : 0;
     let fullJS = jsJSON.js
     fullJS = fullJS.replace(/w_header/g, "document.getElementsByClassName('AppHeader-module_title__EQr6V')[0]")
