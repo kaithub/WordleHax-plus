@@ -2,6 +2,7 @@
 
 const path = require("path");
 const pkg = require('./package.json');
+const TerserPlugin = require("terser-webpack-plugin");
 
 const stylesHandler = "style-loader";
 
@@ -36,6 +37,14 @@ const config = {
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
   },
+  optimization: {
+    minimizer: [
+      new TerserPlugin(),
+    ],
+  },
 };
 
-module.exports = config;
+module.exports = () => {
+  config.mode = "production";
+  return config;
+}
