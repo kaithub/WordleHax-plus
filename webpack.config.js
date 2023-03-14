@@ -1,6 +1,7 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require("path");
+const pkg = require('./package.json')
 
 const isProduction = true
 
@@ -10,6 +11,7 @@ const config = {
   entry: "./dist/tsc/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
+    filename: 'WordlePlusPlus-v'+pkg.version
   },
   plugins: [
     // Add your plugins here
