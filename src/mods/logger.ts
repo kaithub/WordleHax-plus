@@ -2,6 +2,7 @@ enum LogLevels {
     log = "Log",
     error = "Error",
     warning = "Warning",
+    success = "Success",
     init = "Initialization"
 }
 class Logger {

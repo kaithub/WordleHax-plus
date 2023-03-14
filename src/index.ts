@@ -1,6 +1,7 @@
 const theme = require('./main_theme.wpp')
-import * as injector from "./inject/main.ts"
+import logger from "./mods/logger"
+import injector from "./inject/main"
 
-injector.default.aio(theme, theme, 'W++')
+injector.aio(theme, theme, 'W++')
 
-console.log('Wordle++ injected.')
+new logger.Logger(logger.LogLevels.success).log('Injected W++')
