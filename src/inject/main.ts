@@ -1,8 +1,7 @@
 import logger from "../mods/logger";
 import trackerRemoval from "../mods/trackerRemoval";
-
-const cssInjector = require("./cssInjector.ts");
-const jsInjector = require("./jsInjector.ts");
+import cssInjector from "./cssInjector";
+import jsInjector from "./jsInjector";
 
 export default {
     css: cssInjector,

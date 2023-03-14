@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     name: 'W++ Starter Theme',
     author: 'Wordle++ Team',
     css: `

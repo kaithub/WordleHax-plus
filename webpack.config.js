@@ -7,7 +7,7 @@ const isProduction = true
 const stylesHandler = "style-loader";
 
 const config = {
-  entry: "./src/index.ts",
+  entry: "./tsc/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
