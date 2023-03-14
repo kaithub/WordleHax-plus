@@ -1,14 +1,14 @@
 enum LogLevels {
-    log = "Log",
-    error = "Error",
-    warning = "Warning",
-    success = "Success",
-    init = "Initialization"
+    log = 'Log',
+    error = 'Error',
+    warning = 'Warning',
+    success = 'Success',
+    init = 'Initialization'
 }
 class Logger {
     level: LogLevels;
     module: string;
-    constructor(level: LogLevels = LogLevels.log, module: string = "W++") {
+    constructor(level: LogLevels = LogLevels.log, module: string = 'W++') {
         this.level = level;
         this.module = module;
     }

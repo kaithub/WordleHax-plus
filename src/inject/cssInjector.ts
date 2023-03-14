@@ -10,6 +10,6 @@ export default (cssJSON) => {
         document.body.appendChild(newStyle)
         new logger.Logger(logger.LogLevels.success).log('CSS injected successfully!')
     } catch (er) {
-        new logger.Logger(logger.LogLevels.error).log("CSS injection failed! " + er)
+        new logger.Logger(logger.LogLevels.error).log('CSS injection failed! ' + er)
     }
 }

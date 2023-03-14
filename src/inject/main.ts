@@ -13,7 +13,7 @@ export default {
         document.title = 'Wordle - Modded w/ W++'
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
-                document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = "w++ & wordle settings"
+                document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = 'w++ & wordle settings'
                 let g = document.createElement('h1')
                 g.className = 'Modal-module_heading__u2uxI'
                 g.innerText = 'using w++ v1.0'
