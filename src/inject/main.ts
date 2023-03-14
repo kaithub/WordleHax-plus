@@ -1,3 +1,6 @@
+import logger from "../mods/logger";
+import trackerRemoval from "../mods/trackerRemoval";
+
 const cssInjector = require("./cssInjector");
 const jsInjector = require("./jsInjector");
 
@@ -5,12 +8,12 @@ export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
-        console.log('Initialization: Removing stupid things -ads,trackers')
-        
+        new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers')
         document.getElementById('top').remove()
-        console.log('Initialization: Adding cool things')
+        trackerRemoval();
+        new logger.Logger(logger.LogLevels.init).log('Adding cool things')
         document.title = 'Wordle - Modded w/ W++'
-        console.log('Cool things now. Auto-inject init.')
+        new logger.Logger(logger.LogLevels.init).log('Auto-inject starting')
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
                 document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerText = "w++ & wordle settings"
@@ -30,7 +33,7 @@ export default {
         if (!document.getElementsByClassName('Settings-module_footnote__TOUR0')[0]) {
             throw new Error('Auto-inject failed! Open the settings menu, then re-inject.')
         }
-        console.log('Next up is CSS & JS injections!')
+        new logger.Logger(logger.LogLevels.init).log('Injecting CSS & JS')
         cssInjector(css)
         jsInjector(js, wpt)
     }
