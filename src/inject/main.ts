@@ -7,6 +7,12 @@ export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
+        // is user on the page yet
+        if(document.getElementsByClassName('Welcome-module_title__uhLqe')[0].innerHTML == "Welcome Back") {
+            alert('Press Continue, then inject.')
+            throw new Error('Can\'t inject when game hasn\'t been initialized yet.')
+        }
+
         new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers & pre-inject initialization.')
         document.getElementById('top').remove()
         trackerRemoval();

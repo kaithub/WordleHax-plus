@@ -1,4 +1,5 @@
 import logger from "../mods/logger";
+import removeAbsentLetters from "../mods/removeAbsentLetters";
 
 export default (jsJSON, wpt = null) => {
     document.getElementById('wpp-script') ? document.getElementById('wpp-script').remove() : 0;
@@ -13,6 +14,7 @@ export default (jsJSON, wpt = null) => {
     let newJS = document.createElement('script')
     newJS.innerHTML = `/* W++ code */ document.getElementsByClassName('AppHeader-module_title__EQr6V')[0].innerHTML = '${wpt ? wpt : '(ERR WPT01)'}'; \n` + fullJS;
     newJS.id = 'wpp-script'
+    removeAbsentLetters()
 
     new logger.Logger(logger.LogLevels.init).log('JS injecting...')
     try {
