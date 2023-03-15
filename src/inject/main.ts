@@ -27,7 +27,7 @@ export default {
         document.getElementById('help-button').onclick = () => {
             setTimeout(() => {
                 document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = 'Welcome to W++!'
-                document.getElementsByClassName('Help-module_subheading__mbRG9')[0].innerHTML = "The new and easiest way to mod & theme Wordle."
+                document.getElementsByClassName('Help-module_subheading__mbRG9')[0].innerHTML = "<p>The new and easiest way to mod & theme Wordle.</p><p>You can edit this message however you want in <span style='background-color:#c4ce37'>src/inject/main.ts</span> then RRR (recompile, refresh, reinject).</p><p>To make it easier, here's a refresh button. <button class='Key-module_key__kchQI Key-module_oneAndAHalf__bq8Tw' type='button' onclick='window.location.replace(window.location.href)'>Go</button>"
                 document.getElementsByClassName('Help-module_examples__W3VXL')[0].remove()
                 document.getElementsByClassName('Help-module_statsLogin__HkQec')[0].remove()
                 document.getElementsByClassName('Help-module_instructions__uXsG6')[0].remove()
@@ -42,9 +42,7 @@ export default {
         new logger.Logger(logger.LogLevels.init).log('Injecting CSS & JS')
         cssInjector(css)
         jsInjector(js, wpt)
-        // @ts-ignore-start
-        document.getElementsByClassName('Modal-module_modalOverlay__cdZDa')[0].click() 
-        // @ts-ignore-end
+        document.getElementById('help-button').click()
     }
 }
 
