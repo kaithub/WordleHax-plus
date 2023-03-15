@@ -35,6 +35,7 @@ export default {
             }, 20)
         }
         document.getElementById('settings-button').click()
+        document.getElementById('AppHeader-module_navButton__nKv2h').remove()
 
         if (!document.getElementsByClassName('Settings-module_footnote__TOUR0')[0]) {
             throw new Error('Auto-inject failed! Open the settings menu, then re-inject.')
@@ -43,6 +44,7 @@ export default {
         cssInjector(css)
         jsInjector(js, wpt)
         document.getElementById('help-button').click()
+        document.getElementById('help-button').remove()
     }
 }
 
