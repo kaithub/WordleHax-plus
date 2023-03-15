@@ -22,8 +22,19 @@ export default {
                 g1.innerText = `${js.name} by ${js.author}`
                 document.getElementsByClassName('Modal-module_content__TrPIX')[0].appendChild(g)
                 document.getElementsByClassName('Modal-module_content__TrPIX')[0].appendChild(g1)
-            }, 50)
-
+            }, 20)
+        }
+        document.getElementById('help-button').onclick = () => {
+            setTimeout(() => {
+                document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = 'Welcome to W++!'
+                let g1 = document.createElement('p')
+                g1.innerText = `W+++++++++++++++`
+                document.getElementsByClassName('Help-module_subheading__mbRG9')[0].innerHTML = "The new and easiest way to mod & theme Wordle."
+                document.getElementsByClassName('Help-module_examples__W3VXL')[0].remove()
+                document.getElementsByClassName('Help-module_statsLogin__HkQec')[0].remove()
+                document.getElementsByClassName('Help-module_instructions__uXsG6')[0].remove()
+                document.getElementsByClassName('Help-module_reminderSignUp__oQ42D')[0].appendChild(g1)
+            }, 20)
         }
         document.getElementById('settings-button').click()
 
