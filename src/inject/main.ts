@@ -27,13 +27,11 @@ export default {
         document.getElementById('help-button').onclick = () => {
             setTimeout(() => {
                 document.getElementsByClassName('Modal-module_heading__u2uxI')[0].innerHTML = 'Welcome to W++!'
-                let g1 = document.createElement('p')
-                g1.innerText = `W+++++++++++++++`
                 document.getElementsByClassName('Help-module_subheading__mbRG9')[0].innerHTML = "The new and easiest way to mod & theme Wordle."
                 document.getElementsByClassName('Help-module_examples__W3VXL')[0].remove()
                 document.getElementsByClassName('Help-module_statsLogin__HkQec')[0].remove()
                 document.getElementsByClassName('Help-module_instructions__uXsG6')[0].remove()
-                document.getElementsByClassName('Help-module_reminderSignUp__oQ42D')[0].appendChild(g1)
+                document.getElementsByClassName('Help-module_reminderSignUp__oQ42D')[0].innerHTML ="<p>W++ v1.1.0</p>"
             }, 20)
         }
         document.getElementById('settings-button').click()
