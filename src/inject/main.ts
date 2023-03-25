@@ -8,7 +8,7 @@ export default {
     js: jsInjector,
     aio: function (css, js, wpt) {
         // is user on the page yet
-        if(document.getElementsByClassName('Welcome-module_title__uhLqe')[1].innerHTML == "Welcome Back") {
+        if(document.getElementsByClassName('Welcome-module_title__uhLqe')[1]) {
             alert('Press Continue, then inject.')
             throw new Error('Can\'t inject when game hasn\'t been initialized yet.')
         }

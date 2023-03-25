@@ -14,11 +14,11 @@ export default (jsJSON, wpt = null) => {
     let newJS = document.createElement('script')
     newJS.innerHTML = `/* W++ code */ document.getElementsByClassName('AppHeader-module_title__EQr6V')[0].innerHTML = '${wpt ? wpt : '(ERR WPT01)'}'; \n` + fullJS;
     newJS.id = 'wpp-script'
-    removeAbsentLetters()
-
+    
     new logger.Logger(logger.LogLevels.init).log('JS injecting...')
     try {
         document.body.appendChild(newJS)
+        removeAbsentLetters()
         new logger.Logger(logger.LogLevels.success).log('JS injected!')
     } catch (er) {
         new logger.Logger(logger.LogLevels.error).log('Try opening the settings menu and reinjecting.')
