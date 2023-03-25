@@ -3,7 +3,7 @@ import removeAbsentLetters from "../mods/removeAbsentLetters";
 import { WPPGlobal } from "../WPPGlobal";
 
 export default (jsJSON, wpt = null) => {
-    document.getElementById('wpp-script') ? document.getElementById('wpp-script').remove() : 0;
+    
     let fullJS = jsJSON.js
     fullJS = fullJS.replace(/w_header/g, 'document.getElementsByClassName(\''+WPPGlobal.Header+'\')[0]')
     fullJS = fullJS.replace(/w_bkb/g, 'document.getElementsByClassName(\''+WPPGlobal.BelowKeyboard+'\')[0]')

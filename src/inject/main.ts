@@ -16,7 +16,7 @@ export default {
         }
 
         new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers & pre-inject initialization.')
-        document.getElementById('top').remove()
+        document.getElementById('top') ? document.getElementById('top').remove() : 0;
         trackerRemoval();
         document.title = 'Wordle - Modded w/ W++'
         document.getElementById('settings-button').onclick = () => {

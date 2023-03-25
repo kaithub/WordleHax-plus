@@ -1,7 +1,6 @@
 import logger from "../mods/logger";
 
 export default (cssJSON) => {
-    document.getElementById('wpp-style') ? document.getElementById('wpp-style').remove() : 0;
     let fullCSS = cssJSON.css
     let newStyle = document.createElement('style')
     newStyle.innerHTML = `/* ${cssJSON.name} by ${cssJSON.author} */\n` + fullCSS;
