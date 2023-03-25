@@ -1,8 +1,9 @@
 import logger from "./logger"
+import { ModGlobal } from "./ModGlobal"
 
 export default function () {
-    remTracker('apstag', 'Amazon')
-    remTracker('googletag', 'Google')
+    remTracker(ModGlobal.AMZTracker, 'Amazon')
+    remTracker(ModGlobal.GTracker, 'Google')
 }
 function remTracker(trackerID: string, trackerName: string) {
     delete window[trackerID]

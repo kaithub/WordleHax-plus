@@ -57,7 +57,8 @@ export default {
     js: `
     let g2 = document.createElement('p')
         g2.style = "text-align: center;"
-        g2.innerText = "Welcome to W++, the extensible and moddable platform for Wordle!"
+        g2.innerText = "Hello!"
+        g2.onhover = () => {this.remove();}
         w_bkb.appendChild(g2)
    console.log('This is the starter theme')
     `
