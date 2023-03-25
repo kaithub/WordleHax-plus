@@ -3,7 +3,7 @@ export enum ModGlobal {
     AMZTracker = 'apstag',
     GTracker = 'googletag',
     StatsContainer = 'Stats-module_ctaContainer__1Krdy',
-    BotContainer = 'Stats-module_botLink__Gf9gC',
+    BotLink = 'Stats-module_botLink__Gf9gC',
 }
 
 export function getFElement(cn: string) {
