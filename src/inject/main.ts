@@ -13,7 +13,7 @@ export default {
     js: jsInjector,
     aio: function (css, js, wpt) {
         if(document.getElementById('wpp-script') || document.getElementById('wpp-style')) {
-            throw new Error("W++ has been injected already. Cannot continue. ERR WPI-2FY");
+            throw new Error("W++ has been injected already. Cannot continue. ERR WPI-2fY");
         }
 
         if(document.getElementsByClassName('Welcome-module_title__uhLqe')[1]) {
