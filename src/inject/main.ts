@@ -11,14 +11,11 @@ export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
-        // is user on the page yet
         if(document.getElementsByClassName('Welcome-module_title__uhLqe')[1]) {
-            alert('Press Continue, then inject.')
-            throw new Error('Can\'t inject when game hasn\'t been initialized yet.')
+            (document.getElementsByClassName('Welcome-module_button__ZG0Zh')[0] as HTMLElement).click();
         }
 
         new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers & pre-inject initialization.')
-        document.getElementById('top') ? document.getElementById('top').remove() : 0;
         trackerRemoval();
         document.title = 'Wordle - Modded w/ W++'
         document.getElementById('settings-button').onclick = () => {
@@ -39,7 +36,7 @@ export default {
                 getFElement('Modal-module_heading__u2uxI').innerHTML = 'Welcome to W++!'
                 getFElement('Help-module_subheading__mbRG9').innerHTML = `
                 <p>The new and easiest way to mod & theme Wordle.</p>
-                <p>You can edit this message however you want in <span style='background-color:#c4ce37'>src/inject/main.ts</span> then RRR (recompile, refresh, reinject).</p>
+                <p>You can edit this message however you want in <span style='background-color:#c4ce37'>src/inject/main.ts</span> then RRR (rebuild, refresh, reinject).</p>
                 <p>To make it easier, here's a refresh button. <button class='Key-module_key__kchQI' type='button' onclick='window.location.replace(window.location.href)'>Go</button></p>
                 <h1 class='Modal-module_heading__u2uxI Modal-module_newHeading__Ah45w'>Wanna edit the theme?</h1>
                 <p>Editing the theme is as easy as changing a few lines of CSS in <span style='background-color:#c4ce37'>src/themes/main_theme.wpp.ts</span>
@@ -72,7 +69,14 @@ export default {
         cssInjector(css)
         jsInjector(js, wpt)
         document.getElementById('help-button').click()
-        document.getElementById('help-button').remove()
+        setTimeout(() => {
+            (document.getElementsByClassName('Modal-module_modalOverlay__cdZDa')[0] as HTMLElement).click()
+            setTimeout(() => {
+                document.getElementById('top') ? document.getElementById('top').remove() : 0;
+                document.getElementById('help-button').click() // Bypass stats interfering with welcome
+                document.getElementById('help-button').remove()
+            },250)
+        },1000)
     }
 }
 
