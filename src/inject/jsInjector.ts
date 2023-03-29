@@ -11,6 +11,7 @@ export default (jsJSON, wpt = null) => {
     for (let i = 0; i < 30; i++) {
         fullJS = fullJS.replace(new RegExp('w_tile_' + i, 'g'), 'document.getElementsByClassName(\''+WPPGlobal.Tile+'\')[' + i + ']')
     }
+    fullJS = fullJS.replace(/doUseRAL/g, 'window._sentryConfig.ralf')
 
     let newJS = document.createElement('script')
     newJS.innerHTML = `/* W++ code */ document.getElementsByClassName('${WPPGlobal.Header}')[0].innerHTML = '${wpt ? wpt : '(ERR WPT01)'}'; \n` + fullJS;
@@ -19,7 +20,6 @@ export default (jsJSON, wpt = null) => {
     new logger.Logger(logger.LogLevels.init).log('JS injecting...')
     try {
         document.body.appendChild(newJS)
-        removeAbsentLetters()
         new logger.Logger(logger.LogLevels.success).log('JS injected!')
     } catch (er) {
         new logger.Logger(logger.LogLevels.error).log('Try opening the settings menu and reinjecting.')
