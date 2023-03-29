@@ -15,7 +15,7 @@ class Logger {
         this.module = module;
     }
     public log(message: string) {
-        if (WPPGlobal.IsSilent == "Yes") return;
+        if (typeof WPPGlobal.IsSilent === "number") return;
         console.log(`[${this.module} ${this.level}] ` + message)
     }
 }

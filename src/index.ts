@@ -6,6 +6,10 @@ new logger.Logger(logger.LogLevels.init).log('Checking for previous injection, a
 document.getElementById('wpp-script') ? document.getElementById('wpp-script').remove() : 0;
 document.getElementById('wpp-style') ? document.getElementById('wpp-style').remove() : 0;
 
-injector.aio(main_theme, main_theme, 'W++')
+try {
+    injector.aio(main_theme, main_theme, 'W++')
+} catch(err) {
+    new logger.Logger(logger.LogLevels.error).log('ERR WPF-5FN: '+err)
+}
 
 new logger.Logger(logger.LogLevels.success).log('Injected W++')

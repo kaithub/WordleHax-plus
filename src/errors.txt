@@ -1,0 +1,27 @@
+-- Wordle++ Error Directory
+- Key:
+WPx-0tu: Wordle++ (x type error) (code)
+WPT-0FN: Wordle++ Title Error #0, is fatal error, cannot be fixed by user
+- x can be replaced with:
+T: Title Error
+F: Failure
+C: Crash
+A: Already found
+I: Already injected
+- t can be replaced with:
+F: Fatal error
+M: Major error
+m: Minor error
+B: Potential bug
+- u can be replaced with:
+Y: Yes it can be easily fixed
+N: No it cannot be easily fixed
+- 0 is replaced with the ID of the err #.
+
+WPT-1mY: No title text was included with W++.
+WPI-2FY: W++ is already injected. Please refresh and then reinject.
+WPF-3mY: W++ failed to inject it's CSS. Try reinjecting.
+WPF-4MY: W++ failed to inject it's JS. Reinject W++.
+WPF-5FN: W++ failed to inject. Try reinjecting.
+WPA-6mN: W++ found W++ CSS already. Attempting to override.
+WPA-7mN: W++ found W++ JS already. Attempting to override.

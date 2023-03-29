@@ -12,6 +12,10 @@ export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
+        if(document.getElementById('wpp-script') || document.getElementById('wpp-style')) {
+            throw new Error("W++ has been injected already. Cannot continue. ERR WPI-2FY");
+        }
+
         if(document.getElementsByClassName('Welcome-module_title__uhLqe')[1]) {
             (document.getElementsByClassName('Welcome-module_button__ZG0Zh')[0] as HTMLElement).click();
         }
@@ -40,6 +44,9 @@ export default {
                 getFElement('Help-module_statsLogin__HkQec').remove()
                 getFElement('Help-module_instructions__uXsG6').remove()
                 getFElement('Help-module_reminderSignUp__oQ42D').remove()
+                setTimeout(() => {
+                    document.getElementById('_sd_cdi').remove();
+                },5000)
             }, 20)
         }
         document.getElementById('statistics-button').onclick = () => {

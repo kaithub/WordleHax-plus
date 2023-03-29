@@ -22,7 +22,6 @@ export default (jsJSON, wpt = null) => {
         document.body.appendChild(newJS)
         new logger.Logger(logger.LogLevels.success).log('JS injected!')
     } catch (er) {
-        new logger.Logger(logger.LogLevels.error).log('Try opening the settings menu and reinjecting.')
-        new logger.Logger(logger.LogLevels.error).log('JS injection failed! ' + er)
+        new logger.Logger(logger.LogLevels.error).log('ERR WPF-4MY: '+er)
     }
 }
