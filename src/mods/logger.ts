@@ -1,3 +1,5 @@
+import { WPPGlobal } from "../WPPGlobal";
+
 enum LogLevels {
     log = 'Log',
     error = 'Error',
@@ -13,6 +15,7 @@ class Logger {
         this.module = module;
     }
     public log(message: string) {
+        if (WPPGlobal.IsSilent == "Yes") return;
         console.log(`[${this.module} ${this.level}] ` + message)
     }
 }
