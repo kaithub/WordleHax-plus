@@ -22,3 +22,8 @@ jobs:
 
     - name: Build WordleHax+
       run: npm run build
+
+    - name: Upload file
+      uses: actions/upload-artifact@v3
+      with:
+        path: dist/*
