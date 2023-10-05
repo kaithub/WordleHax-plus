@@ -37,7 +37,7 @@
   <p align="center">
     Making Wordle modding easier than before.
     <br />
-    <a href="https://github.com/kaithub/WordleHax-plus"><strong>Explore the docs »</strong></a>
+    <a href="https://kaithub.github.io/WordleHax-plus/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/kaithub/WordleHax-plus">View Demo</a>
@@ -88,6 +88,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
+### Install(Not self-built)
+
+Please refer to the [Documentation](https://kaithub.github.io/WordleHax-plus/).
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
@@ -122,7 +126,7 @@ This is an example of how to list things you need to use the software and how to
 Once WordleHax+ is installed, your theme & it's source is packed into one. Navigate to Wordle (on NYT), press the bookmark, and watch the magic unfold.
 ![Theme GIF](images/whp-theme.gif)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://kaithub.github.io/WordleHax-plus/)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,9 +136,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Stable injection method
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [x] Restart Wordle
+- [ ] Get Answer
+    - [ ] Get Hints
 
 See the [open issues](https://github.com/kaithub/WordleHax-plus/issues) for a full list of proposed features (and known issues).
 
