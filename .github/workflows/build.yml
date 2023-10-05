@@ -26,4 +26,4 @@ jobs:
     - name: Upload file
       uses: actions/upload-artifact@v3
       with:
-        path: dist/*
+        path: dist/WordleHaxPlus-v*.js
