@@ -2,7 +2,7 @@ name: Build WordleHax+
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -22,7 +22,3 @@ jobs:
 
     - name: Build WordleHax+
       run: npm run build
-
-artifacts:
-  paths:
-    - dist/*
