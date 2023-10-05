@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Set up version labeling
+      run: export PACKAGE_VERSION=$(node -p "require('./package.json').version")
     - name: Checkout repository
       uses: actions/checkout@v2
 
@@ -26,5 +28,5 @@ jobs:
     - name: Upload file
       uses: actions/upload-artifact@v3
       with:
-        path: dist/WordleHaxPlus-v*.js
+        path: dist/WordleHaxPlus-v${{ env.PACKAGE_VERSION }}.js
         name: WordleHaxPlus
