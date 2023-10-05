@@ -53,7 +53,7 @@ export default {
             background-position: 15% 100%
         }
     }
-    `,
+    `/* ,
     js: `
     let g2 = document.createElement('p')
         g2.style = "text-align: center;"
@@ -63,6 +63,6 @@ export default {
    console.log('RAL Challenge!')
    setInterval(() => {
     doUseRAL();
-},250)
-    `
+},250) 
+    ` */ //this code was fucking useless lol
 }

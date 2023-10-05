@@ -1,6 +1,6 @@
 {
-  "name": "WordleHax-plus",
-  "version": "1.2.1",
+  "name": "wordlehax-plus",
+  "version": "1.2.2",
   "description": "Extensible modding for Wordle.",
   "main": "src/index.ts",
   "scripts": {
