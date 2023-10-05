@@ -16,7 +16,7 @@ javascript:(function() {
                 JSZip.loadAsync(zipBlob).then(function(zip) {
                     zip.forEach(function(relativePath, file) {
                         file.async('string').then(function(content) {
-                            console.log("sheesh, autorunning!")
+                            console.log("sheesh, autorunning!");
                             var script = document.createElement('script');
                             script.textContent = content;
                             document.body.appendChild(script);
