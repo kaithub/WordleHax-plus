@@ -10,7 +10,7 @@ jobs:
     
     steps:
     - name: Set up version labeling
-      run: export PACKAGE_VERSION=$(node -p "require('./package.json').version")
+      run: export PACKAGE_VERSION=$(node -p "require('../package.json').version")
     - name: Checkout repository
       uses: actions/checkout@v2
 
