@@ -4,7 +4,7 @@ javascript:(function() {
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', zipUrl, true);
-    req.channel.QueryInterface(Components.interfaces.nsIHttpChannel).redirectionLimit = 0;
+    xhr.channel.QueryInterface(Components.interfaces.nsIHttpChannel).redirectionLimit = 0;
     xhr.responseType = 'blob';
 
     xhr.onload = function() {
