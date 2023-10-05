@@ -4,7 +4,7 @@ export default (cssJSON) => {
     let fullCSS = cssJSON.css
     let newStyle = document.createElement('style')
     newStyle.innerHTML = `/* ${cssJSON.name} by ${cssJSON.author} */\n` + fullCSS;
-    newStyle.id = 'wpp-style'
+    newStyle.id = 'whp-style'
     try {
         document.body.appendChild(newStyle)
         new logger.Logger(logger.LogLevels.success).log('CSS injected successfully!')

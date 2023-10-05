@@ -120,7 +120,7 @@ This is an example of how to list things you need to use the software and how to
 ## Usage
 
 Once WordleHax+ is installed, your theme & it's source is packed into one. Navigate to Wordle (on NYT), press the bookmark, and watch the magic unfold.
-![Theme GIF](images/wpp-theme.gif)
+![Theme GIF](images/whp-theme.gif)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 

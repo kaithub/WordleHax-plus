@@ -1,4 +1,4 @@
-import { WPPGlobal } from "../WPPGlobal";
+import { WHPGlobal } from "../WHPGlobal";
 
 enum LogLevels {
     log = 'Log',
@@ -15,7 +15,7 @@ class Logger {
         this.module = module;
     }
     public log(message: string) {
-        if (typeof WPPGlobal.IsSilent === "number") return;
+        if (typeof WHPGlobal.IsSilent === "number") return;
         console.log(`[${this.module} ${this.level}] ` + message)
     }
 }

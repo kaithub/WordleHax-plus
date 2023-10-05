@@ -1,4 +1,4 @@
-export enum WPPGlobal {
+export enum WHPGlobal {
     IsSilent = "",
     Version = "1.2.1",
     Header = 'AppHeader-module_title__EQr6V',

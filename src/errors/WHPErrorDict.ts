@@ -1,4 +1,4 @@
-export enum WPPErrorDictionary {
+export enum WHPErrorDictionary {
     // Full Errors
     "WPT-1mY" = "No title text was included with WH+.",
     "WPI-2fY" = "WH+ is already injected. Please refresh and then reinject.",

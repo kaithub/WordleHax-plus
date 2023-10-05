@@ -3,7 +3,7 @@ import { getFElement } from "../mods/ModGlobal";
 import removeAbsentLetters from "../mods/removeAbsentLetters";
 import removeStatsShare from "../mods/removeStatsShare";
 import trackerRemoval from "../mods/trackerRemoval";
-import { WPPGlobal } from "../WPPGlobal";
+import { WHPGlobal } from "../WHPGlobal";
 import cssInjector from "./cssInjector";
 import jsInjector from "./jsInjector";
 import welcome from "./welcome";
@@ -12,7 +12,7 @@ export default {
     css: cssInjector,
     js: jsInjector,
     aio: function (css, js, wpt) {
-        if(document.getElementById('wpp-script') || document.getElementById('wpp-style')) {
+        if(document.getElementById('whp-script') || document.getElementById('whp-style')) {
             throw new Error("WH+ has been injected already. Cannot continue. ERR WPI-2fY");
         }
 
@@ -28,7 +28,7 @@ export default {
                 getFElement('Modal-module_heading__u2uxI').innerHTML = 'WH+ & wordle settings'
                 let g = document.createElement('h1')
                 g.className = 'Modal-module_heading__u2uxI'
-                g.innerText = 'using WH+ v'+WPPGlobal.Version
+                g.innerText = 'using WH+ v'+WHPGlobal.Version
                 let g1 = document.createElement('h1')
                 g1.className = 'Modal-module_heading__u2uxI'
                 g1.innerText = `${js.name} by ${js.author}`
@@ -63,7 +63,7 @@ export default {
         new logger.Logger(logger.LogLevels.init).log('Injecting CSS & JS')
         // last minute fixings
         window['_sentryConfig'] = {};
-        window['_sentryConfig']['wppg'] = WPPGlobal;
+        window['_sentryConfig']['whpg'] = WHPGlobal;
         window['_sentryConfig']['ralf'] = removeAbsentLetters;
 
         cssInjector(css)

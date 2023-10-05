@@ -1,4 +1,4 @@
-import main_theme from './themes/main_theme.wpp'
+import main_theme from './themes/main_theme.whp'
 import logger from "./mods/logger"
 import injector from "./inject/main"
 

@@ -1,5 +1,5 @@
-import { WPPErrorDictionary } from "../WPPErrorDict";
+import { WHPErrorDictionary } from "../WHPErrorDict";
 
 export default function (error: string) {
-    return WPPErrorDictionary[error];
+    return WHPErrorDictionary[error];
 }
