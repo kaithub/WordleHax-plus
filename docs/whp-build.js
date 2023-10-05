@@ -1,6 +1,6 @@
 javascript:(function() {
     var zipUrl = 'https://nightly.link/kaithub/WordleHax-plus/workflows/build/master/WordleHaxPlus.zip';
-    var jsZipUrl = 'https://cdn.jsdelivr.net/npm/jszip@3.5.0/dist/jszip.min.js'; // JSZip library from a CDN
+    var jsZipUrl = 'https://cdn.jsdelivr.net/npm/jszip@3.5.0/dist/jszip.min.js';
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', zipUrl, true);
