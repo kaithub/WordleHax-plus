@@ -4,22 +4,20 @@ javascript:(function() {
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', zipUrl, true);
-    xhr.responseType = 'arraybuffer';
+    xhr.responseType = 'blob';
 
     xhr.onload = function() {
         if (xhr.status === 200) {
-            var zipData = xhr.response;
-
+            var zipBlob = xhr.response;
             var jsZipScript = document.createElement('script');
             jsZipScript.src = jsZipUrl;
             jsZipScript.onload = function() {
                 console.log('JSZip library loaded');
-                
-                JSZip.loadAsync(zipData).then(function(zip) {
+                JSZip.loadAsync(zipBlob).then(function(zip) {
                     zip.forEach(function(relativePath, file) {
                         file.async('string').then(function(content) {
                             console.log(relativePath);
-                            console.log("sheesh, autorunning!");
+                            console.log("sheesh, autorunning!")
                             eval(content);
                         });
                     });
