@@ -27,4 +27,3 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         path: dist/WordleHaxPlus-v1.2.3.js
-        name: WordleHaxPlus
