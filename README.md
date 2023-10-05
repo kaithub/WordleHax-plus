@@ -28,23 +28,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Roizor/wordle-plus-plus">
+  <a href="https://github.com/kaithub/WordleHax-plus">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Wordle++</h3>
+<h3 align="center">WordleHax+</h3>
 
   <p align="center">
     Making Wordle modding easier than before.
     <br />
-    <a href="https://github.com/Roizor/wordle-plus-plus"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kaithub/WordleHax-plus"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Roizor/wordle-plus-plus">View Demo</a>
+    <a href="https://github.com/kaithub/WordleHax-plus">View Demo</a>
     ·
-    <a href="https://github.com/Roizor/wordle-plus-plus/issues">Report Bug</a>
+    <a href="https://github.com/kaithub/WordleHax-plus/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Roizor/wordle-plus-plus/issues">Request Feature</a>
+    <a href="https://github.com/kaithub/WordleHax-plus/issues">Request Feature</a>
   </p>
 </div>
 
@@ -78,7 +78,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `Roizor`, `wordle-plus-plus`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `Wordle++`, `Making Wordle modding easier than before.`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `kaithub`, `Kai/S` `WordleHax-plus`, `WordleHax+`, `Making Wordle modding easier than before.`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,13 +100,13 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Roizor/wordle-plus-plus.git
+   git clone https://github.com/kaithub/WordleHax-plus.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
-3. Build Wordle++
+3. Build WordleHax+
    ```sh
    npm run build
    ```
@@ -119,7 +119,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once Wordle++ is installed, your theme & it's source is packed into one. Navigate to Wordle (on NYT), press the bookmark, and watch the magic unfold.
+Once WordleHax+ is installed, your theme & it's source is packed into one. Navigate to Wordle (on NYT), press the bookmark, and watch the magic unfold.
 ![Theme GIF](images/wpp-theme.gif)
 
 _For more examples, please refer to the [Documentation](https://example.com)_
@@ -136,7 +136,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Feature 3
     - [ ] Nested Feature
 
-See the [open issues](https://github.com/Roizor/wordle-plus-plus/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/kaithub/WordleHax-plus/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,9 +172,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Yea ok, ur not getting this info..
 
-Project Link: [https://github.com/Roizor/wordle-plus-plus](https://github.com/Roizor/wordle-plus-plus)
+Project Link: [https://github.com/kaithub/WordleHax-plus](https://github.com/kaithub/WordleHax-plus)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,14 +193,14 @@ Project Link: [https://github.com/Roizor/wordle-plus-plus](https://github.com/Ro
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Roizor/wordle-plus-plus.svg?style=for-the-badge
-[contributors-url]: https://github.com/Roizor/wordle-plus-plus/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Roizor/wordle-plus-plus.svg?style=for-the-badge
-[forks-url]: https://github.com/Roizor/wordle-plus-plus/network/members
-[stars-shield]: https://img.shields.io/github/stars/Roizor/wordle-plus-plus.svg?style=for-the-badge
-[stars-url]: https://github.com/Roizor/wordle-plus-plus/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Roizor/wordle-plus-plus.svg?style=for-the-badge
-[issues-url]: https://github.com/Roizor/wordle-plus-plus/issues
-[license-shield]: https://img.shields.io/github/license/Roizor/wordle-plus-plus.svg?style=for-the-badge
-[license-url]: https://github.com/Roizor/wordle-plus-plus/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/kaithub/WordleHax-plus.svg?style=for-the-badge
+[contributors-url]: https://github.com/kaithub/WordleHax-plus/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kaithub/WordleHax-plus.svg?style=for-the-badge
+[forks-url]: https://github.com/kaithub/WordleHax-plus/network/members
+[stars-shield]: https://img.shields.io/github/stars/kaithub/WordleHax-plus.svg?style=for-the-badge
+[stars-url]: https://github.com/kaithub/WordleHax-plus/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kaithub/WordleHax-plus.svg?style=for-the-badge
+[issues-url]: https://github.com/kaithub/WordleHax-plus/issues
+[license-shield]: https://img.shields.io/github/license/kaithub/WordleHax-plus.svg?style=for-the-badge
+[license-url]: https://github.com/kaithub/WordleHax-plus/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png

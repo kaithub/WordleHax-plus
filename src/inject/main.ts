@@ -13,7 +13,7 @@ export default {
     js: jsInjector,
     aio: function (css, js, wpt) {
         if(document.getElementById('wpp-script') || document.getElementById('wpp-style')) {
-            throw new Error("W++ has been injected already. Cannot continue. ERR WPI-2fY");
+            throw new Error("WH+ has been injected already. Cannot continue. ERR WPI-2fY");
         }
 
         if(document.getElementsByClassName('Welcome-module_title__uhLqe')[1]) {
@@ -22,13 +22,13 @@ export default {
 
         new logger.Logger(logger.LogLevels.init).log('Removing ads, trackers & pre-inject initialization.')
         trackerRemoval();
-        document.title = 'Wordle - Modded w/ W++'
+        document.title = 'Wordle - Modded w/ WH+'
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
-                getFElement('Modal-module_heading__u2uxI').innerHTML = 'w++ & wordle settings'
+                getFElement('Modal-module_heading__u2uxI').innerHTML = 'WH+ & wordle settings'
                 let g = document.createElement('h1')
                 g.className = 'Modal-module_heading__u2uxI'
-                g.innerText = 'using w++ v'+WPPGlobal.Version
+                g.innerText = 'using WH+ v'+WPPGlobal.Version
                 let g1 = document.createElement('h1')
                 g1.className = 'Modal-module_heading__u2uxI'
                 g1.innerText = `${js.name} by ${js.author}`
@@ -38,7 +38,7 @@ export default {
         }
         document.getElementById('help-button').onclick = () => {
             setTimeout(() => {
-                getFElement('Modal-module_heading__u2uxI').innerHTML = 'Welcome to W++!'
+                getFElement('Modal-module_heading__u2uxI').innerHTML = 'Welcome to WH+!'
                 getFElement('Help-module_subheading__mbRG9').innerHTML = welcome
                 getFElement('Help-module_examples__W3VXL').remove()
                 getFElement('Help-module_statsLogin__HkQec').remove()

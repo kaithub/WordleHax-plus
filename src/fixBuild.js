@@ -10,4 +10,4 @@ async function a() {
     fs.writeFileSync(`./dist/WordlePlusPlus-v${pkg.version}.js`, 'javascript:' + cb.code, 'utf8');
 }
 
-console.log('[W++ Build] Build complete')
+console.log('[WH+ Build] Build complete')

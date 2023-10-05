@@ -1,6 +1,6 @@
 export default {
-    name: 'W++ Starter Theme',
-    author: 'Wordle++ Team',
+    name: 'WH+ Starter Theme',
+    author: 'WordleHax+ Team',
     css: `
     button {
         transition-duration: 0.25s;

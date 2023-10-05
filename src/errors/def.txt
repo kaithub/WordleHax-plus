@@ -1,7 +1,7 @@
--- Wordle++ Errors & How to Read Them
+-- WordleHax+ Errors & How to Read Them
 - Key:
-WPx-0tu: Wordle++ (x type error) (code)
-WPT-0FN: Wordle++ Title Error #0, is fatal error, cannot be fixed by user
+WPx-0tu: WordleHax+ (x type error) (code)
+WPT-0FN: WordleHax+ Title Error #0, is fatal error, cannot be fixed by user
 - x can be replaced with:
 T: Title Error
 F: Failure

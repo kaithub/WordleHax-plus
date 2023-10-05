@@ -14,7 +14,7 @@ export default (jsJSON, wpt = null) => {
     fullJS = fullJS.replace(/doUseRAL/g, 'window._sentryConfig.ralf')
 
     let newJS = document.createElement('script')
-    newJS.innerHTML = `/* W++ code */ document.getElementsByClassName('${WPPGlobal.Header}')[0].innerHTML = '${wpt ? wpt : '(ERR WPT01)'}'; \n` + fullJS;
+    newJS.innerHTML = `/* WH+ code */ document.getElementsByClassName('${WPPGlobal.Header}')[0].innerHTML = '${wpt ? wpt : '(ERR WPT01)'}'; \n` + fullJS;
     newJS.id = 'wpp-script'
     
     new logger.Logger(logger.LogLevels.init).log('JS injecting...')

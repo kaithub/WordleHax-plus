@@ -10,7 +10,7 @@ enum LogLevels {
 class Logger {
     level: LogLevels;
     module: string;
-    constructor(level: LogLevels = LogLevels.log, module: string = 'W++') {
+    constructor(level: LogLevels = LogLevels.log, module: string = 'WH+') {
         this.level = level;
         this.module = module;
     }

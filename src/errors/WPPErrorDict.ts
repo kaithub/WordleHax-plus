@@ -1,12 +1,12 @@
 export enum WPPErrorDictionary {
     // Full Errors
-    "WPT-1mY" = "No title text was included with W++.",
-    "WPI-2fY" = "W++ is already injected. Please refresh and then reinject.",
-    "WPF-3mY" = "W++ failed to inject it's CSS. Try reinjecting.",
-    "WPF-4MY" = "W++ failed to inject it's JS. Reinject W++.",
-    "WPF-5fN" = "W++ failed to inject. Try reinjecting.",
-    "WPA-6mN" = "W++ found W++ CSS already. Attempting to override.",
-    "WPA-7mN" = "W++ found W++ JS already. Attempting to override.",
+    "WPT-1mY" = "No title text was included with WH+.",
+    "WPI-2fY" = "WH+ is already injected. Please refresh and then reinject.",
+    "WPF-3mY" = "WH+ failed to inject it's CSS. Try reinjecting.",
+    "WPF-4MY" = "WH+ failed to inject it's JS. Reinject WH+.",
+    "WPF-5fN" = "WH+ failed to inject. Try reinjecting.",
+    "WPA-6mN" = "WH+ found WH+ CSS already. Attempting to override.",
+    "WPA-7mN" = "WH+ found WH+ JS already. Attempting to override.",
     // Err Types
     "T" = "Title Error",
     "F" = "Failure",

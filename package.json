@@ -1,5 +1,5 @@
 {
-  "name": "wordle-plus-plus",
+  "name": "WordleHax-plus",
   "version": "1.2.0",
   "description": "Extensible modding for Wordle.",
   "main": "src/index.ts",
@@ -11,7 +11,7 @@
     "watch": "webpack --watch"
   },
   "keywords": [],
-  "author": "Roizor",
+  "author": "Kai/S",
   "license": "ISC",
   "devDependencies": {
     "@webpack-cli/generators": "^3.0.1",
