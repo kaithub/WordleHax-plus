@@ -34,7 +34,7 @@ export default {
                 dateInput.id = 'datepicker';
                 getFElement('Settings-module_container__utVKC').appendChild(datePicker);
                 getFElement('Settings-module_container__utVKC').appendChild(dateInput);
-                var datePickerInput = document.getElementById("datepicker");
+                var datePickerInput: HTMLInputElement = document.getElementById("datepicker");
                 datePickerInput.addEventListener("change", function() {
                     var selectedDate = datePickerInput.value;fetch("https://www.nytimes.com/svc/wordle/v2/"+selectedDate+".json").then(r=>r.json()).then(r=>{console.log(r.solution)})
                 });
