@@ -137,7 +137,7 @@ _For more examples, please refer to the [Documentation](https://kaithub.github.i
 
 - [x] Stable injection method
 - [x] Restart Wordle
-- [ ] Get Answer
+- [ ] Get Answer (I found the endpoint where the answers are stored)
     - [ ] Get Hints
 
 See the [open issues](https://github.com/kaithub/WordleHax-plus/issues) for a full list of proposed features (and known issues).
