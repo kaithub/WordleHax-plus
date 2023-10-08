@@ -26,7 +26,6 @@ export default {
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
                 getFElement('Modal-module_heading__u2uxI').innerHTML = 'WH+ & Wordle settings'
-                // Sucky UI start
                 const datePicker = document.createElement('label');
                 datePicker.htmlFor = 'datepicker'
                 datePicker.innerHTML = 'Get wordle answer for:';
