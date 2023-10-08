@@ -26,14 +26,21 @@ export default {
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
                 getFElement('Modal-module_heading__u2uxI').innerHTML = 'WH+ & Wordle settings'
+                // Sucky UI start
                 const datePicker = document.createElement('label');
-                datePicker.htmlFor = 'datepicker'
+                datePicker.htmlFor = 'datePicker'
                 datePicker.innerHTML = 'Get wordle answer for:';
                 const dateInput = document.createElement('input');
                 dateInput.type = 'date';
-                dateInput.id = 'datepicker';
+                dateInput.id = 'datePicker';
                 getFElement('Settings-module_container__utVKC').appendChild(datePicker);
                 getFElement('Settings-module_container__utVKC').appendChild(dateInput);
+                // Sucky UI end || datePicker code start
+                var datePickerInput = document.getElementById("datePicker");
+                datePickerInput.addEventListener("change", function() {
+                    var selectedDate = datePickerInput.value;fetch("https://www.nytimes.com/svc/wordle/v2/"+selectedDate+".json").then(r=>r.json()).then(r=>{console.log(r.solution)})
+                });
+                // datePicker code end
                 let g = document.createElement('h1')
                 g.className = 'Modal-module_heading__u2uxI'
                 g.innerText = 'using WH+ v'+WHPGlobal.Version
