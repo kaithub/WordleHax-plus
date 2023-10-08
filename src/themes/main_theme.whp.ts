@@ -53,16 +53,7 @@ export default {
             background-position: 15% 100%
         }
     }
-    `/* ,
+    `,
     js: `
-    let g2 = document.createElement('p')
-        g2.style = "text-align: center;"
-        g2.innerText = "Hello!"
-        g2.onhover = () => {this.remove();}
-        w_bkb.appendChild(g2)
-   console.log('RAL Challenge!')
-   setInterval(() => {
-    doUseRAL();
-},250) 
-    ` */ //this code was fucking useless lol
+    `
 }
