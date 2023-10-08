@@ -25,7 +25,15 @@ export default {
         document.title = 'Wordle - Modded w/ WH+'
         document.getElementById('settings-button').onclick = () => {
             setTimeout(() => {
-                getFElement('Modal-module_heading__u2uxI').innerHTML = 'WH+ & wordle settings'
+                getFElement('Modal-module_heading__u2uxI').innerHTML = 'WH+ & Wordle settings'
+                const datePicker = document.createElement('label');
+                datePicker.htmlFor = 'datepicker'
+                datePicker.innerHTML = 'Get wordle answer for:';
+                const dateInput = document.createElement('input');
+                dateInput.type = 'date';
+                dateInput.id = 'datepicker';
+                getFElement('Settings-module_container__utVKC').appendChild(datePicker);
+                getFElement('Settings-module_container__utVKC').appendChild(dateInput);
                 let g = document.createElement('h1')
                 g.className = 'Modal-module_heading__u2uxI'
                 g.innerText = 'using WH+ v'+WHPGlobal.Version
